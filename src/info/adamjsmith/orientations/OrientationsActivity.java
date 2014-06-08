@@ -3,6 +3,7 @@ package info.adamjsmith.orientations;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.app.ActionBar;
 
 public class OrientationsActivity extends Activity {
 
@@ -11,6 +12,9 @@ public class OrientationsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orientations);
         Log.d("StateInfo", "onCreate");
+        
+        ActionBar actionBar = getActionBar();
+        actionBar.hide();
     }
     
     @Override
